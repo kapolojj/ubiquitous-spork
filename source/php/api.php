@@ -7,8 +7,8 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Nyholm\Psr7\Factory\Psr17Factory;
 
 require 'vendor/autoload.php';
-// $psr17Factory = new Psr17Factory();
-// AppFactory::setResponseFactory($psr17Factory);
+$psr17Factory = new Psr17Factory();
+AppFactory::setResponseFactory($psr17Factory);
 
 $app = AppFactory::create();
 
